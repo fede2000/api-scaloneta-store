@@ -2,7 +2,7 @@
   "name": "api-scaloneta-store",
   "version": "1.0.0",
   "description": "//Vendedor\r {\r     \"id\": 789022624,\r     \"nickname\": \"TESTFNAB20U0\",\r     \"password\": \"qatest3735\",\r     \"site_status\": \"active\",\r     \"email\": \"test_user_58765652@testuser.com\"\r }",
-  "main": "index.js",
+  "main": "server.ts",
   "directories": {
     "doc": "doc"
   },
