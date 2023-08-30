@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig", 
     "compilerOptions": {
       /* Visit https://aka.ms/tsconfig.json to read more about this file */
       "module": "esnext",
@@ -74,5 +75,8 @@
       "skipLibCheck": true,                           /* Skip type checking of declaration files. */
       "forceConsistentCasingInFileNames": true  
             /* Disallow inconsistently-cased references to the same file. */
-    }
+    },
+    "ts-node": {
+      "esm": true, // «———— enabling ESM for ts-node   
+    }, 
   }
