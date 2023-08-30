@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "//Vendedor\r {\r     \"id\": 789022624,\r     \"nickname\": \"TESTFNAB20U0\",\r     \"password\": \"qatest3735\",\r     \"site_status\": \"active\",\r     \"email\": \"test_user_58765652@testuser.com\"\r }",
   "main": "server.js",
+  "type": "module",
   "directories": {
     "doc": "doc"
   },
