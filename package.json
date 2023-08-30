@@ -2,15 +2,15 @@
   "name": "api-scaloneta-store",
   "version": "1.0.0",
   "description": "//Vendedor\r {\r     \"id\": 789022624,\r     \"nickname\": \"TESTFNAB20U0\",\r     \"password\": \"qatest3735\",\r     \"site_status\": \"active\",\r     \"email\": \"test_user_58765652@testuser.com\"\r }",
-  "main": "server.ts",
+  "main": "server.js",
   "type": "module",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --poll ./server.ts",
-    "start": "node server.ts",
+    "dev": "ts-node-dev --poll ./server.js",
+    "start": "node server.js",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
     "studio": "prisma studio",
