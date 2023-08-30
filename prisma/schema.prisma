@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  relationMode      = "prisma"
+}
+
+model Role{
+  id       Int    @id @default(autoincrement())
+  role     String    @unique
+  User     User[]
+}
+
+model Category {
+  id       Int      @id @default(autoincrement())    
+  category String
+  products Products[]
+}
+
+
+model Products {
+  id         String      @id @default(dbgenerated("(uuid())")) @db.VarChar(36)
+  name       String       @db.VarChar(50)
+  price      Float
+  imgUrl     String       @db.VarChar(1000)
+  description String      @db.VarChar(3000)
+  brand String
+  created_at DateTime @default(now()) @db.Timestamp(0)
+  updated_at DateTime @default(now()) @db.Timestamp(0)
+  category Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  OrderItems  OrderItems[]
+}
+
+model States {
+  id    Int    @id @default(autoincrement())
+  state String
+  Orders  Orders[]
+}
+
+model User {
+  id         String      @id @default(dbgenerated("(uuid())")) @db.VarChar(36)
+  name       String    @db.VarChar(255) 
+  email      String    @db.VarChar(255) @unique
+  password   String    @db.VarChar(255)
+  role       Role       @relation(fields: [roleId],references: [id])
+  created_at DateTime?  @default(now()) @db.Timestamp(0)
+  updated_at DateTime?  @default(now()) @db.Timestamp(0)
+  deleted_at DateTime? @db.Timestamp(0)
+  roleId     Int
+  Orders     Orders[]
+}
+
+model ShippingDetails{
+    id         String      @id @db.VarChar(36)
+    domicilio String
+    localidad String
+    order     Orders @relation(fields: [ordersId], references: [id])
+    ordersId  String
+}
+
+model Orders {
+  id             String     @id @db.VarChar(36)
+  user           User       @relation(fields: [userId],references: [id])
+  status         States     @relation(fields: [statusId],references: [id])
+  paymentId      String?
+  merchanOrderId String?
+  shippingPrice Float
+  subTotal       Float
+  total       Float
+  created_at     DateTime @default(now()) @db.Timestamp(0)
+  updated_at     DateTime @default(now()) @db.Timestamp(0)
+  statusId       Int
+  userId         String
+  OrderItems      OrderItems[]
+  ShippingDetails ShippingDetails[]
+}
+
+model OrderItems {
+  id         String      @id @db.VarChar(36)
+  order      Orders   @relation(fields: [ordersId], references: [id])
+  product    Products @relation(fields: [productsId], references: [id])
+  quantity   Int
+  unitPrice  Float
+  ordersId   String
+  productsId String
+}
