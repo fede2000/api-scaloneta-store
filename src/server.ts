@@ -6,7 +6,7 @@ import { errorHandler } from "./middleware/error-handlers";
 
 const server = express()
 
-const PORT = 8080;
+const PORT = process.env.PORT || 3306;
 // load env vars
 server.use(express.json())
 

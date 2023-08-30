@@ -26,12 +26,12 @@ export async function seed() {
 
     ]
   })
-    // await prisma.role.createMany({
-    //     data:[
-    //         {role: 'admin'},
-    //         {role: 'user' }
-    //     ]
-    // });
+    await prisma.role.createMany({
+        data:[
+            {role: 'admin'},
+            {role: 'user' }
+        ]
+    });
     // await prisma.products.createMany({
     //   data:[
     //     {
