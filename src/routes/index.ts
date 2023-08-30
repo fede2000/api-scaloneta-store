@@ -1,6 +1,6 @@
 import { Router } from "express";
 // import CategoryRoutes from "./category.routes"
-import AuthRoutes from "./Auth.routes"
+
 import { authRouter } from "../auth/authRouter";
 import { categoryRouter } from "../category/categoryRouter";
 import { orderRouter } from "../order/orderRouter";
