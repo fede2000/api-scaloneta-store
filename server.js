@@ -1,6 +1,6 @@
 import express from "express"
 // import handlers from "./src/routes/index"
-import handlers from "./src/routes/index.ts"
+import handlers from "./src/routes/index.js"
 import { createPrismaClient } from "./src/config/db.ts";
 import { errorHandler } from "./src/middleware/error-handlers.ts";
 
