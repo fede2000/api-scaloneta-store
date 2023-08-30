@@ -76,7 +76,6 @@
       "forceConsistentCasingInFileNames": true  
             /* Disallow inconsistently-cased references to the same file. */
     },
-    "include": ["/**/*.ts"],
     "ts-node": {
       "esm": true, // «———— enabling ESM for ts-node   
     }, 
