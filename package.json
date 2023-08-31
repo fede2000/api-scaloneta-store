@@ -8,17 +8,18 @@
     "doc": "doc"
   },
   "scripts": {
+    "build": "tsc",
+    "start": "ts-node --esm index.ts",
+    "dev": "ts-node-dev --esm index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --poll ./server.js",
-    "start": "ts-node server.js",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
     "studio": "prisma studio",
     "seed": "prisma db seed -- --preview-feature",
-    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
+    "ts-node": "ts-node  --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node --esm prisma/seed.ts"
   },
   "repository": {
     "type": "git",
