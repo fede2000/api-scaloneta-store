@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "ts-node --esm index.ts",
-    "dev": "ts-node-dev --esm index.ts",
+    "start": "ts-node --esm server.ts",
+    "dev": "ts-node-dev --esm server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
