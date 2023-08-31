@@ -1,8 +1,8 @@
-import { Currencies, PaymentItem } from "../core/types/mercadopago";
-import { OrderRequestDto, OrderResponseDto } from "../core/types/order";
-import { Result } from "../core/types/response";
-import { createPreference } from "../payment/paymentLogic";
-import { createOrder } from "./orderLogic";
+import { Currencies, PaymentItem } from "../core/types/mercadopago.ts";
+import { OrderRequestDto, OrderResponseDto } from "../core/types/order.ts";
+import { Result } from "../core/types/response.ts";
+import { createPreference } from "../payment/paymentLogic.ts";
+import { createOrder } from "./orderLogic.ts";
 
 export const createOrderInteractor =async (OrderRequestDto:OrderRequestDto): Promise<Result<OrderResponseDto>> => {
     console.log("createOrderInteractor")

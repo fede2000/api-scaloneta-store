@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import {login, refreshToken, register} from "./authLogic"
-import { prisma } from "../config/db";
+import {login, refreshToken, register} from "./authLogic.ts"
+import { prisma } from "../config/db.ts";
 
 export const loginController = async (req: Request, res: Response, next: NextFunction) => {
    const { email, password } = req.body;

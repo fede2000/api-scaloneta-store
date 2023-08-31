@@ -1,5 +1,5 @@
 import * as core from "express-serve-static-core"
-import { UserDto } from "../../auth/authLogic"
+import { UserDto } from "../../auth/authLogic.ts"
 
 declare global {
     namespace Express {

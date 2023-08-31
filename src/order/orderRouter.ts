@@ -1,9 +1,9 @@
 import { Router } from "express";
 
 import { body } from 'express-validator';
-import { authAdminMiddleware, authMiddleware } from "../middleware/auth";
-import { validateRequest } from "../middleware/validate-request";
-import { createOrderController } from "./orderControllers";
+import { authAdminMiddleware, authMiddleware } from "../middleware/auth.ts";
+import { validateRequest } from "../middleware/validate-request.ts";
+import { createOrderController } from "./orderControllers.ts";
 
 
 export const orderRouter = Router();

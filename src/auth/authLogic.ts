@@ -1,12 +1,12 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import {prisma} from '../config/db'
-import { getConfig } from '../config/config'
+import {prisma} from '../config/db.ts'
+import { getConfig } from '../config/config.ts'
 import { v4 as uuid } from "uuid";
 import { error } from 'console';
-import { AuthDto, loginResponse } from '../core/types/auth';
-import { Result } from '../core/types/response';
-import { BadRequestError } from '../errors/bad-request-error';
+import { AuthDto, loginResponse } from '../core/types/auth.ts';
+import { Result } from '../core/types/response.ts';
+import { BadRequestError } from '../errors/bad-request-error.ts';
 
 
 

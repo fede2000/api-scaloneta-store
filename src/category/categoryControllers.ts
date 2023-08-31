@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { createCategory, getCategories } from "./categoryLogic";
+import { createCategory, getCategories } from "./categoryLogic.ts";
 
 
 

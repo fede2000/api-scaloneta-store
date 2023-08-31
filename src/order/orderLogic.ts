@@ -1,11 +1,11 @@
 
-import {prisma} from '../config/db'
-import { Result } from '../core/types/response';
-import { BadRequestError } from '../errors/bad-request-error';
-import { ServerError } from '../errors/server-error';
-import { CategoryDto } from '../core/types/category';
-import { OrderRequestDto } from '../core/types/order';
-import { Order, OrderItems } from '../core/entities/orders';
+import {prisma} from '../config/db.ts'
+import { Result } from '../core/types/response.ts';
+import { BadRequestError } from '../errors/bad-request-error.ts';
+import { ServerError } from '../errors/server-error.ts';
+import { CategoryDto } from '../core/types/category.ts';
+import { OrderRequestDto } from '../core/types/order.ts';
+import { Order, OrderItems } from '../core/entities/orders.ts';
 import { v4 as uuid } from "uuid";
 
 export const createOrder = async (data: OrderRequestDto): Promise<Result<Order>> => {

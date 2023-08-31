@@ -1,8 +1,8 @@
 import { Router } from "express";
-import * as controllers from "./categoryControllers";
+import * as controllers from "./categoryControllers.ts";
 import { body } from 'express-validator';
-import { authAdminMiddleware, authMiddleware } from "../middleware/auth";
-import { validateRequest } from "../middleware/validate-request";
+import { authAdminMiddleware, authMiddleware } from "../middleware/auth.ts";
+import { validateRequest } from "../middleware/validate-request.ts";
 
 
 export const categoryRouter = Router();

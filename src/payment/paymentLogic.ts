@@ -1,6 +1,8 @@
-import { prisma } from "../config/db";
-import { configure, preferences } from 'mercadopago';
-import {MercadoPagoResponse,MercadoPagoPaymentRequest} from "../core/types/mercadopago"
+import { prisma } from "../config/db.ts";
+// import { configure, preferences } from 'mercadopago';
+import pkg from 'mercadopago';
+const { configure, preferences } = pkg;
+import {MercadoPagoResponse,MercadoPagoPaymentRequest} from "../core/types/mercadopago.ts"
 
 import { CreatePreferencePayload } from 'mercadopago/models/preferences/create-payload.model';
 

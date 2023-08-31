@@ -1,8 +1,8 @@
 import express from "express"
 // import handlers from "./src/routes/index"
-import handlers from "./src/routes/index"
-import { createPrismaClient } from "./src/config/db";
-import { errorHandler } from "./src/middleware/error-handlers";
+import handlers from "./src/routes/index.ts"
+import { createPrismaClient } from "./src/config/db.ts";
+import { errorHandler } from "./src/middleware/error-handlers.ts";
 
 
 const server = express()

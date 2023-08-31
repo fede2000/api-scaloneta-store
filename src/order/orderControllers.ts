@@ -1,7 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { OrderRequestDto, OrderResponseDto } from "../core/types/order";
-import { Result } from "../core/types/response";
-import { createOrderInteractor } from "./orderInteractor";
+import { createOrderInteractor } from "./orderInteractor.ts";
 
 export const createOrderController = async (  req: Request,
     res: Response,
