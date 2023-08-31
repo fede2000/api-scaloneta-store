@@ -1,5 +1,9 @@
+import { v4 as uuid } from "uuid";
+
+
 export const products = [
     {
+        id: uuid(),
         name: 'Camiseta Titular AFA',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-seleccion-hombre.jpg?raw=true',
         description: '100% Argentina. Diseñada para los hinchas, ofrece comodidad en todo momento gracias a su tejido suave con tecnología de absorción AEROREADY. Los detalles en la parte interior trasera del cuello están inspirados en la bandera nacional que los jugadores representan con tanto orgullo. Un producto hecho parcialmente con contenido reciclado generado a partir de desechos de producción, tales como recortes de tela, y desechos domésticos postconsumo, para evitar un mayor impacto ambiental al producir contenido virgen.',
@@ -8,6 +12,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta Copa America',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-seleccion-copaamerica-3.jpg?raw=true',
         description: 'Hecha para un verdadero hincha, demostrá tu pasión por la selección Argentina con esta camiseta de fútbol adidas. Refleja la unión que genera en todo el mundo tanto en el juego como en los estadios y en las calles. En nuestro país, de Ushuaia a La Quiaca, el fútbol trasciende las fronteras de cada provincia argentina llegando a cada uno de sus rincones y embanderándonos detrás de nuestro equipo. Todo porque el fútbol nos une y nos hace únicos a la vez. Tejido de punto doble 51 % poliéster reciclado, 49 % poliéster.',
@@ -16,6 +21,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: '¡La del Dibu!',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-arquero.jpg?raw=true',
         description: 'El arco nunca estuvo tan bien custodiado como el amor por la selección que acompañás pase lo que pase, la Camiseta Adidas AFA 20/21 Arquero te permite vivenciar la fuerza y energía de los hinchas en la cancha, y el sentir de cada argentino que vibra con las jugadas de los nuestros. Su construcción en poliéster reciclado contribuye a la sostenibilidad ambiental e incorpora la tecnología AEROREADY que absorbe la humedad y te mantiene seco incluso en los momentos de mayor tensión.',
@@ -24,6 +30,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta Alternativa Mujer',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-alternativa-mujer.jpg?raw=true',
         description: '100% Argentina. La Camiseta Adidas AFA Home Mujer 2022 diseñada para los hinchas, ofrece comodidad en todo momento gracias a su tejido suave con tecnología de absorción AEROREADY. Los detalles en la parte interior trasera del cuello están inspirados en la bandera nacional que los jugadores representan con tanto orgullo. Un producto hecho parcialmente con contenido reciclado generado a partir de desechos de producción, tales como recortes de tela, y desechos domésticos postconsumo, para evitar un mayor impacto ambiental al producir contenido virgen.',
@@ -32,6 +39,7 @@ export const products = [
         categoryId: 2,
       },
       {
+        id: uuid(),
         name: '¡La del Dibu en la Final"',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-arquero-verde.jpg?raw=true',
         description: 'Con un diseño que no querrás dejar de tener con vos, la Camiseta adidas Afa Gk está pensada para los hinchas y su color verde resalta el cuidado del medioambiente. Por eso, está hecha con un 100% de contenido reciclado y gráficos que te llenan de orgullo al llevarla puesta. Además, gracias a AEROREADY, la tecnología de absorción de sudor de adidas, estarás cómodo y fresco en todo el tiempo que la lleves puesta. El escudo de Argentina en el frente, es el cierre de tu amor y pasión.',
@@ -40,6 +48,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta Copa America AFA Mujer',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-mujer-copaamerica.jpg?raw=true',
         description: 'En honor al 1',
@@ -48,6 +57,7 @@ export const products = [
         categoryId: 2,
       },
       {
+        id: uuid(),
         name: 'Camiseta Titular AFA Mujer',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-seleccion-mujer.jpeg?raw=true',
         description: '100% Argentina. La Camiseta Adidas AFA Home Mujer 2022 diseñada para los hinchas, ofrece comodidad en todo momento gracias a su tejido suave con tecnología de absorción AEROREADY. Los detalles en la parte interior trasera del cuello están inspirados en la bandera nacional que los jugadores representan con tanto orgullo. Un producto hecho parcialmente con contenido reciclado generado a partir de desechos de producción, tales como recortes de tela, y desechos domésticos postconsumo, para evitar un mayor impacto ambiental al producir contenido virgen.',
@@ -56,6 +66,7 @@ export const products = [
         categoryId: 2,
       },
       {
+        id: uuid(),
         name: 'Camiseta Que Mira Mujer',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/remera-quemira-mujer.jpeg?raw=true',
         description: 'Camiseta 100% algodon sublimada con la iconica frase de nuestro capitán campeon del mundo. ',
@@ -64,6 +75,7 @@ export const products = [
         categoryId: 2,
       },
       {
+        id: uuid(),
         name: 'Camiseta que mira hombre 2',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/remera-quemira-2.png?raw=true',
         description: 'Camiseta 100% algodon sublimada con la iconica frase de nuestro capitán campeon del mundo.',
@@ -72,6 +84,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta que mira hombre 1',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/remera-quemira.jpg?raw=true',
         description: 'Camiseta 100% algodon sublimada con la iconica frase de nuestro capitán campeon del mundo.',
@@ -80,6 +93,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta que mira hombre 3',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/remera.quemira-3.jpg?raw=true',
         description: 'Camiseta 100% algodon sublimada con la iconica frase de nuestro capitán campeon del mundo.',
@@ -88,6 +102,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta de la Araña',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-alvarez.jpg?raw=true',
         description: 'Camiseta de Julian Alvarez , el hombre araña argentino que llego a la seleccion para convertirse en heroe en el mundial. ¡Leyenda!',
@@ -96,6 +111,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta del Angel',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-dimaria.jpg?raw=true',
         description: 'Camiseta de Angel Di Maria, nuestro Angel del gol que siempre aparece cuando las papas queman, ¡Gracias eternas Fideo!',
@@ -104,6 +120,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta del Toro',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-lautaro.jpg?raw=true',
         description: 'Camiseta del toro argentino Lautaro Martinez',
@@ -112,6 +129,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta Sexo Fernández',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-enzo.jpeg?raw=true',
         description: 'Camiseta Enzo Fernández, el ultimo de la lista, se hizo dueño del mediocampo argentino jugando como si estuviese en el patio de su casa, ¡Que jugador!',
@@ -120,6 +138,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Camiseta del 10',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/camiseta-messi.jpg?raw=true',
         description: 'Camiseta de Lionel Andres Messi Cuccitini, rey de reyes,dios del futbol,eterno capitan,idolo maximo, leyenda absoluta',
@@ -129,6 +148,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Cuadro Decorativo Messi',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/cuadro-messi-copa.jpg?raw=true',
         description: 'Cuadro de 5 partes. Paño central: 35 cm x 40 cm. Paños laterales: 20 cm x 30 cm. Bastidor macizo en madera MDF. · Madera de 9mm de espesor. · Acabado satinado negro. Impresión de Vinilo Mate con tintas Latex. · Las tintas latex son más resistentes a los rayones. · Pueden limpiarse con un paño húmedo. Listos para colgar. · Listones para su colocación en paredes de todo tipo. · Se cuelgan con dos simples tornillos o clavos. ',
@@ -137,6 +157,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Cuadro Decorativo Messi 2',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/cuadro-messi-copaamerica.jpg?raw=true',
         description: 'Cuadro de 5 partes. Paño central: 35 cm x 40 cm. Paños laterales: 20 cm x 30 cm. Bastidor macizo en madera MDF. · Madera de 9mm de espesor. · Acabado satinado negro. Impresión de Vinilo Mate con tintas Latex. · Las tintas latex son más resistentes a los rayones. · Pueden limpiarse con un paño húmedo. Listos para colgar. · Listones para su colocación en paredes de todo tipo. · Se cuelgan con dos simples tornillos o clavos.',
@@ -145,6 +166,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Cuadro Decorativo Messi 3',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/cuadro-messi-copadelmundo.jpg?raw=true',
         description: 'Cuadro de 5 partes. Paño central: 35 cm x 40 cm. Paños laterales: 20 cm x 30 cm. Bastidor macizo en madera MDF. · Madera de 9mm de espesor. · Acabado satinado negro. Impresión de Vinilo Mate con tintas Latex. · Las tintas latex son más resistentes a los rayones. · Pueden limpiarse con un paño húmedo. Listos para colgar. · Listones para su colocación en paredes de todo tipo. · Se cuelgan con dos simples tornillos o clavos.',
@@ -153,6 +175,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Cuadro Decorativo Messi-Araña',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/cuadro-messi-julian.jpg?raw=true',
         description: 'Cuadro de 4 partes. Paño central: 35 cm x 40 cm. Paños laterales: 20 cm x 30 cm. Bastidor macizo en madera MDF. · Madera de 9mm de espesor. · Acabado satinado negro. Impresión de Vinilo Mate con tintas Latex. · Las tintas latex son más resistentes a los rayones. · Pueden limpiarse con un paño húmedo. Listos para colgar. · Listones para su colocación en paredes de todo tipo. · Se cuelgan con dos simples tornillos o clavos.',
@@ -161,6 +184,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Velador Led Lio Messi',
         imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_934883-MLA52971755140_122022-O.webp',
         description: 'Modelo: Lio Messi Copa del MundoMedidas aproximadas: 20x15cmLa Base LED incluye 7 colores y tipos de iluminación para que ambientes tu espacio de la forma mas canchera y moderna!Decorá con tus modelos favoritos y disfrutá de tu nueva lámpara! - Recomendamos limpiar el acrílico con un paño húmedo en alcohol para perfeccionar la transparencia.',
@@ -169,6 +193,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Velador Led Lio Messi-copa',
         imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_971716-MLA53020342889_122022-O.webp',
         description: 'Modelo: Lio Messi Copa del MundoMedidas aproximadas: 20x15cmLa Base LED incluye 7 colores y tipos de iluminación para que ambientes tu espacio de la forma mas canchera y moderna!Decorá con tus modelos favoritos y disfrutá de tu nueva lámpara! - Recomendamos limpiar el acrílico con un paño húmedo en alcohol para perfeccionar la transparencia.',
@@ -177,6 +202,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Cubre Cama Campeones del mundo',
         imgUrl: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/004/760/products/21-7afe433d6a81a2866a16727565800312-1024-1024.webp',
         description: 'Tela de 1° calidad, antialérgica y el relleno es de guata de 160grs. Grueso y  abrigado, para que duermas como un campeon del mundo.',
@@ -186,6 +212,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Cuadro Scaloneta',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/cuadro-scaloneta.jpg?raw=true',
         description: 'Con pescado',
@@ -194,6 +221,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Protector Celular Messi',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/funda-celular-messi.jpg?raw=true',
         description: 'Protector de celular fachero de lio messi',
@@ -202,6 +230,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Protector Celular Araña',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/funda-julian-alvarez.jpg?raw=true',
         description: 'Protector de primera calidad como la araña ,100% resistente',
@@ -210,6 +239,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Auriculares Seleccion Argentina',
         imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_882750-MLA48408839670_122021-O.jpg',
         description: 'Auriculares Afa , sonido y comodidad del primer nivel, escucha como campeon.',
@@ -218,6 +248,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Set Mate Argentina',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/set-mate.jpg?raw=true',
         description: 'Set de mate con matera de cuero 100% argentino de exportacion, azucarero y yerbero de lata y mate de lata.',
@@ -226,6 +257,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Set Mate Afa',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/set-mate-2.jpg?raw=true',
         description: 'Set de mate con matera de lona 100% argentino de exportacion, azucarero y yerbero de lata y mate de lata.',
@@ -234,6 +266,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Porta Sube Messi',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/portasube-messi.jpg?raw=true',
         description: 'Porta sube de plastico resistente, protege tu sube con calidad',
@@ -242,6 +275,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Porta Sube Messi 2',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/porta-sube-messi-2.jpg?raw=true',
         description: 'Porta sube de plastico resistente, protege tu sube con calidad',
@@ -250,6 +284,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Taza Camiseta',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/taza-camiseta-seleccion-argentina-alternativa-2022-.jpg?raw=true',
         description: 'Taza de porcelana , con diseño a laser ',
@@ -258,6 +293,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Taza Campeones',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/taza-campeones-2.jpeg?raw=true',
         description: 'Taza de porcelana , con diseño a laser ',
@@ -266,6 +302,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Taza 3 estrellas',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/taza-campeones.jpeg?raw=true',
         description: 'Taza de porcelana , con diseño a laser ',
@@ -274,6 +311,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Taza qué mirás',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/taza-quemira.jpg?raw=true',
         description: 'Taza de porcelana , con diseño a laser ',
@@ -282,6 +320,7 @@ export const products = [
         categoryId: 4,
       },
       {
+        id: uuid(),
         name: 'Set Muñecos Seleccion',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/mu%C3%B1ecos.seleccion.jpg?raw=true',
         description: 'Set de muñecos de la Scaloneta Coleccionables, hechos en impresora 3d',
@@ -290,6 +329,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Muñeco Messi',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/mu%C3%B1eco-messi.jpg?raw=true',
         description: 'Muñeco hecho en impresora 3d ',
@@ -298,6 +338,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Monopoly Scaloneta',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/monopoly-arg.jpg?raw=true',
         description: 'El juego de mesa mas famoso del mundo , con la tematica de la scaloneta, divertite y juga para ser campeon de mundo.',
@@ -306,6 +347,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Muleco que miras',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/juguete-quemira.jpg?raw=true',
         description: 'Muñeco hecho en impresora 3d',
@@ -314,6 +356,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Funko Dibu',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/funko-dibu.jpg?raw=true',
         description: 'Muñeco hecho en impresora 3d',
@@ -322,6 +365,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Funko Messi',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/Funko_Pop_Messi.jpg?raw=true',
         description: 'Muñeco hecho en impresora 3d',
@@ -330,6 +374,7 @@ export const products = [
         categoryId: 5,
       },
       {
+        id: uuid(),
         name: 'Cuadro Decorativo Messi,Julian,Molina',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/Messi-Alvarez-Molina.jpg?raw=true',
         description: 'Cuadro de 5 partes. Paño central: 35 cm x 40 cm. Paños laterales: 20 cm x 30 cm. Bastidor macizo en madera MDF. · Madera de 9mm de espesor. · Acabado satinado negro. Impresión de Vinilo Mate con tintas Latex. · Las tintas latex son más resistentes a los rayones. · Pueden limpiarse con un paño húmedo. Listos para colgar. · Listones para su colocación en paredes de todo tipo. · Se cuelgan con dos simples tornillos o clavos.',
@@ -338,6 +383,7 @@ export const products = [
         categoryId: 3,
       },
       {
+        id: uuid(),
         name: 'Medias Dibu Hombre',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/medias-dibu.jpg?raw=true',
         description: 'Medias de 100% algodon del dibu martinez,calidad top ',
@@ -346,6 +392,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Medias del 10',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/medias-messi.jpg?raw=true',
         description: 'Medias de 100% algodon de lio messi festejando,calidad top ',
@@ -354,6 +401,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Medias del 10 que mira',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/medias-messi-3.jpg?raw=true',
         description: 'Medias de 100% algodon de lio messi y su iconica frase hacia el bobo Weghorst,calidad top ',
@@ -362,6 +410,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Short Titular Hombre',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/short-titular.jpg?raw=true',
         description: 'Estos shorts adidas Argentina en blanco y negro para jóvenes lucen el mismo estilo futbolero clásico de la camiseta que acompañan. Su tejido suave con tecnología de absorción AEROREADY le brinda comodidad al hincha en todo momento. El escudo bordado de la selección le pone el toque final al look.',
@@ -370,6 +419,7 @@ export const products = [
         categoryId: 1,
       },
       {
+        id: uuid(),
         name: 'Short alternativo Hombre',
         imgUrl: 'https://github.com/fede2000/Scaloneta-Store/blob/main/public/images/productos/short-alternativo.jpeg?raw=true',
         description: 'Estos shorts adidas Argentina en blanco y negro para jóvenes lucen el mismo estilo futbolero clásico de la camiseta que acompañan. Su tejido suave con tecnología de absorción AEROREADY le brinda comodidad al hincha en todo momento. El escudo bordado de la selección le pone el toque final al look.',

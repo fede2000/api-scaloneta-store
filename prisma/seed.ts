@@ -1,37 +1,38 @@
 import { PrismaClient } from "@prisma/client";
-// import { products } from "./products";
+import { products } from "./products.ts";
+
 const prisma = new PrismaClient();
 
 export async function seed() {
-  await prisma.states.createMany({
-    data: [
-      {
-        state: 'active',
-      },
-      {
-        state: 'pending',
-      },
-      {
-        state: 'cancelled',
-      },
-      {
-        state: 'disabled',
-      },
-      {
-        state: 'approved',
-      },
-      {
-        state: 'rejected',
-      },
+  // await prisma.states.createMany({
+  //   data: [
+  //     {
+  //       state: 'active',
+  //     },
+  //     {
+  //       state: 'pending',
+  //     },
+  //     {
+  //       state: 'cancelled',
+  //     },
+  //     {
+  //       state: 'disabled',
+  //     },
+  //     {
+  //       state: 'approved',
+  //     },
+  //     {
+  //       state: 'rejected',
+  //     },
 
-    ]
-  })
-    await prisma.role.createMany({
-        data:[
-            {role: 'admin'},
-            {role: 'user' }
-        ]
-    });
+  //   ]
+  // })
+  //   await prisma.role.createMany({
+  //       data:[
+  //           {role: 'admin'},
+  //           {role: 'user' }
+  //       ]
+  //   });
     // await prisma.products.createMany({
     //   data:[
     //     {
@@ -60,12 +61,12 @@ export async function seed() {
     //     },
     //   ]
     // })
-    // for (let product of products){
-    //   await prisma.products.createMany({
-    //     data:  product
-    //   })
+    for (let product of products){
+      await prisma.products.createMany({
+        data:  product
+      })
       
-    // }
+    }
 }
 
 seed()

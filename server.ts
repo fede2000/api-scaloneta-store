@@ -26,7 +26,7 @@ server.use(errorHandler);
 
 server.get("/", (req, res) => {
 
-    res.json({message: 'Deberias iniciar los request em /api/<entidad>'})
+    res.json({message: 'hola mundo'})
 });
 
 
