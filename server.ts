@@ -18,6 +18,9 @@ server.use((req,res, next) => {
     res.header('Access-Control-Allow-Headers', 'Content-Type')
     next()
 })
+
+const cors = require("cors");
+server.use(cors());
 server.use("/api/v1", handlers)
 
 //hanlderErrors
