@@ -1,6 +1,8 @@
 import express from "express"
 // import handlers from "./src/routes/index"
 import handlers from "./src/routes/index.ts"
+import cors from "cors"
+
 import { createPrismaClient } from "./src/config/db.ts";
 import { errorHandler } from "./src/middleware/error-handlers.ts";
 
@@ -19,7 +21,7 @@ server.use((req,res, next) => {
     next()
 })
 
-const cors = require("cors");
+
 server.use(cors());
 server.use("/api/v1", handlers)
 
