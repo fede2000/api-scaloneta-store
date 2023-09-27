@@ -26,7 +26,12 @@ server.use(bodyParser.json());
 server.use(express.json())
 
 
-server.use(cors());
+server.use(cors({
+    origin: ["https://localhost:3000","https://localhost:5173"],
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true
+}
+));
 server.use("/api/v1", handlers)
 
 //hanlderErrors
