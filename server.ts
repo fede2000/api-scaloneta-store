@@ -2,6 +2,7 @@ import express from "express"
 // import handlers from "./src/routes/index"
 import handlers from "./src/routes/index.ts"
 import cors from "cors"
+import bodyParser from "body-parser";
 
 import { createPrismaClient } from "./src/config/db.ts";
 import { errorHandler } from "./src/middleware/error-handlers.ts";
@@ -20,6 +21,8 @@ server.use((req,res, next) => {
     res.header('Access-Control-Allow-Headers', 'Content-Type')
     next()
 })
+server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.json());
 
 
 server.use(cors());
