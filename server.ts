@@ -23,6 +23,7 @@ server.use((req,res, next) => {
 })
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(bodyParser.json());
+server.use(express.json())
 
 
 server.use(cors());
